@@ -1,18 +1,20 @@
 import { priorityButtonContainer } from "./priorityButtonDom";
 
-const addTaskContainer = document.createElement("div");
-addTaskContainer.id = "addTaskContainer";
+const addProjectContainer = document.createElement("div");
+addProjectContainer.id = "addProjectContainer";
 
-const addTaskText = document.createElement("h2");
-addTaskText.textContent = "Add Task";
+const addProjectText = document.createElement("h2");
+addProjectText.textContent = "Add Project"
 
-const addTaskForm = document.createElement("form");
-addTaskForm.method = "get";
+const addProjectForm = document.createElement("form");
+addProjectForm.method = "get";
 
 //Containers for input
 const divTitle = document.createElement("div");
-const divDueDate = document.createElement("div");
+const divDueDate = document.createElement("div");   
 const divDescription = document.createElement("div");
+
+//Input Elements
 
 //Input Task Name
 const title = document.createElement("input");
@@ -20,12 +22,12 @@ title.type = "text";
 title.id = "title";
 const labelForTitle = document.createElement("label");
 labelForTitle.htmlFor = "title";
-labelForTitle.textContent = "Task Name:";
+labelForTitle.textContent = "Project Name:";
 
 //Input Due Date
 const dueDate = document.createElement("input");
-dueDate.type = "text";
-dueDate.id = "dueDate";
+title.type = "text";
+title.id = "dueDate";
 const labelForDueDate = document.createElement("label");
 labelForDueDate.htmlFor = "dueDate";
 labelForDueDate.textContent = "Due Date:";
@@ -51,10 +53,8 @@ divTitle.append(labelForTitle, title);
 divDueDate.append(labelForDueDate, dueDate);
 divDescription.append(labelForDescriptionTextArea, descriptionTextarea);
 
-const clonedPriorityButtons = priorityButtonContainer.cloneNode(true);
-
 //Appending all divs to the form
-addTaskForm.append(addTaskText, divTitle, divDueDate, clonedPriorityButtons , divDescription, subimtButton);
-addTaskContainer.append(addTaskForm);
+addProjectForm.append(addProjectText, divTitle, divDueDate, priorityButtonContainer, divDescription, subimtButton);
+addProjectContainer.append(addProjectForm);
 
-export {addTaskForm};
+export {addProjectForm};
