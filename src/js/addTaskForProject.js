@@ -17,7 +17,7 @@ const divDescription = document.createElement("div");
 //Input Task Name
 const title = document.createElement("input");
 title.type = "text";
-title.id = "title";
+title.className = "title";
 const labelForTitle = document.createElement("label");
 labelForTitle.htmlFor = "title";
 labelForTitle.textContent = "Task Name:";
@@ -25,14 +25,14 @@ labelForTitle.textContent = "Task Name:";
 //Input Due Date
 const dueDate = document.createElement("input");
 dueDate.type = "date";
-dueDate.id = "dueDate";
+dueDate.className = "dueDate";
 const labelForDueDate = document.createElement("label");
 labelForDueDate.htmlFor = "dueDate";
 labelForDueDate.textContent = "Due Date:";
 
 //Description
 const descriptionTextarea = document.createElement("textarea");
-descriptionTextarea.id = "description";
+descriptionTextarea.className = "description";
 descriptionTextarea.name = "description";
 descriptionTextarea.rows = 5;
 descriptionTextarea.cols = 40;
@@ -43,9 +43,7 @@ labelForDescriptionTextArea.textContent = "Description:";
 //Submit button
 const subimtButton = document.createElement("button");
 subimtButton.type = "submit";
-subimtButton.id = "submitButton";
-subimtButton.textContent = "Submit";
-
+subimtButton.id = "submitTaskInProject";
 //Appending input elements into the container
 divTitle.append(labelForTitle, title);
 divDueDate.append(labelForDueDate, dueDate);
