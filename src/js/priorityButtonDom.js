@@ -9,7 +9,7 @@ const priorityName = "priority";
 //Priority1
 const priorityOne = document.createElement("input");
 priorityOne.type = "radio";
-priorityOne.id = "priorityOne";
+priorityOne.className = "priorityOne";
 priorityOne.name = priorityName;
 const labelPriorityOne = document.createElement("label");
 labelPriorityOne.htmlFor = "priorityOne";
@@ -18,7 +18,7 @@ labelPriorityOne.textContent = "#1";
 //Priority2
 const priorityTwo = document.createElement("input");
 priorityTwo.type = "radio";
-priorityTwo.id = "priorityTwo";
+priorityTwo.className = "priorityTwo";
 priorityTwo.name = priorityName;
 const labelPriorityTwo = document.createElement("label");
 labelPriorityTwo.htmlFor = "priorityTwo";
@@ -27,7 +27,7 @@ labelPriorityTwo.textContent = "#2";
 //Priority3
 const priorityThree = document.createElement("input");
 priorityThree.type = "radio";
-priorityThree.id = "priorityThree";
+priorityThree.className = "priorityThree";
 priorityThree.name = priorityName;
 const labelPriorityThree = document.createElement("label");
 labelPriorityThree.htmlFor = "priorityThree";
