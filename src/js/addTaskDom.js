@@ -24,7 +24,7 @@ labelForTitle.textContent = "Task Name:";
 
 //Input Due Date
 const dueDate = document.createElement("input");
-dueDate.type = "text";
+dueDate.type = "date";
 dueDate.id = "dueDate";
 const labelForDueDate = document.createElement("label");
 labelForDueDate.htmlFor = "dueDate";

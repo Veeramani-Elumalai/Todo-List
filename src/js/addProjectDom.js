@@ -26,8 +26,8 @@ labelForTitle.textContent = "Project Name:";
 
 //Input Due Date
 const dueDate = document.createElement("input");
-title.type = "text";
-title.id = "dueDate";
+dueDate.type = "date";
+dueDate.id = "dueDate";
 const labelForDueDate = document.createElement("label");
 labelForDueDate.htmlFor = "dueDate";
 labelForDueDate.textContent = "Due Date:";
