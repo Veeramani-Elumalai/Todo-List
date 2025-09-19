@@ -42,13 +42,19 @@ const labelForDescriptionTextArea = document.createElement("label");
 labelForDescriptionTextArea.htmlFor = "description";
 labelForDescriptionTextArea.textContent = "Description:";
 
+//Submit button
+const subimtButton = document.createElement("button");
+subimtButton.type = "submit";
+subimtButton.id = "submitButton";
+subimtButton.textContent = "Submit";
+
 //Appending input elements into the container
 divTitle.append(labelForTitle, title);
 divDueDate.append(labelForDueDate, dueDate);
 divDescription.append(labelForDescriptionTextArea, descriptionTextarea);
 
 //Appending all divs to the form
-addTaskForm.append(divTitle, divDueDate, divPriority, divDescription);
+addTaskForm.append(divTitle, divDueDate, divPriority, divDescription, subimtButton);
 addTaskContainer.append(addTaskForm);
 
 export {addTaskForm};
