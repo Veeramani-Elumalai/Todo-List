@@ -12,6 +12,7 @@ priorityOne.type = "radio";
 priorityOne.id = "priorityOne"; 
 priorityOne.name = priorityName;
 priorityOne.value = "1";
+priorityOne.checked = true;
 const labelPriorityOne = document.createElement("label");
 labelPriorityOne.htmlFor = "priorityOne";
 labelPriorityOne.textContent = "#1";

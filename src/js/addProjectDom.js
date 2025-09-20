@@ -8,6 +8,7 @@ addProjectText.textContent = "Add Project"
 
 const addProjectForm = document.createElement("form");
 addProjectForm.method = "get";
+addProjectForm.id = "addProjectFormData";
 
 //Containers for input
 const divTitle = document.createElement("div");
@@ -20,6 +21,7 @@ const divDescription = document.createElement("div");
 const title = document.createElement("input");
 title.type = "text";
 title.className = "title";
+title.name = "projectName"
 const labelForTitle = document.createElement("label");
 labelForTitle.htmlFor = "title";
 labelForTitle.textContent = "Project Name:";
@@ -28,6 +30,7 @@ labelForTitle.textContent = "Project Name:";
 const dueDate = document.createElement("input");
 dueDate.type = "date";
 dueDate.className = "dueDate";
+dueDate.name = "projectDueDate"
 const labelForDueDate = document.createElement("label");
 labelForDueDate.htmlFor = "dueDate";
 labelForDueDate.textContent = "Due Date:";
@@ -35,7 +38,7 @@ labelForDueDate.textContent = "Due Date:";
 //Description
 const descriptionTextarea = document.createElement("textarea");
 descriptionTextarea.className = "description";
-descriptionTextarea.name = "description";
+descriptionTextarea.name = "projectDescription";
 descriptionTextarea.rows = 5;
 descriptionTextarea.cols = 40;
 const labelForDescriptionTextArea = document.createElement("label");
@@ -53,8 +56,10 @@ divTitle.append(labelForTitle, title);
 divDueDate.append(labelForDueDate, dueDate);
 divDescription.append(labelForDescriptionTextArea, descriptionTextarea);
 
+const clonedPriorityButtons = priorityButtonContainer.cloneNode(true);
+
 //Appending all divs to the form
-addProjectForm.append(addProjectText, divTitle, divDueDate, priorityButtonContainer, divDescription, subimtButton);
+addProjectForm.append(addProjectText, divTitle, divDueDate, clonedPriorityButtons, divDescription, subimtButton);
 addProjectContainer.append(addProjectForm);
 
 export {addProjectForm};
