@@ -5,16 +5,22 @@ import { defaultTasks } from "./js/addTask";
 
 //document.body.append(projectTaskForm);
 
+document.body.append(addTaskForm);
+document.body.append(addProjectForm);
+
+addTaskForm.style.display = "none";
+addProjectForm.style.display = "none";
+
 const addTaskButton = document.querySelector("#addTask");
 addTaskButton.addEventListener("click", ()=> {
-    document.body.append(addTaskForm);
-    addProjectForm.remove();
+    addTaskForm.style.display = "block";
+    addProjectForm.style.display = "none";
 });
 
 const addProjectButton = document.querySelector("#addProject");
 addProjectButton.addEventListener("click", ()=> {
-    addTaskForm.remove();
-    document.body.append(addProjectForm);
+    addTaskForm.style.display = "none";
+    addProjectForm.style.display = "block";
 });  
 
 console.log(defaultTasks);
