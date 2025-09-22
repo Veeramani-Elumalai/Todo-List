@@ -3,6 +3,7 @@ import { addProjectForm } from "./js/addProjectDom";
 //import { projectTaskForm } from "./js/addTaskForProject";
 import { defaultTasks } from "./js/addTask";
 import { projectList } from "./js/addProject";
+import { homeButton } from "./js/home";
 
 //document.body.append(projectTaskForm);
 
