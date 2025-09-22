@@ -1,6 +1,7 @@
 import { addTaskForm } from "./addTaskDom";
+import { displayTasks } from "./defaultTask";
 
-const defaultTasks = [];
+const defaultTasksList = [];
 
 class addTask{
     constructor(taskName, taskDueDate, taskPriority, taskDescription){
@@ -21,9 +22,9 @@ addTaskForm.addEventListener("submit", function(event){
 
     const newTask = new addTask(taskName, taskDueDate, taskPriority, taskDescription);
 
-    defaultTasks.push(newTask);
+    defaultTasksList.push(newTask);
     addTaskForm.style.display = 'none';
     addTaskForm.reset();
 })
 
-export { defaultTasks };
+export { defaultTasksList };

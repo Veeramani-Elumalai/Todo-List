@@ -1,7 +1,7 @@
 import { addTaskForm } from "./js/addTaskDom";
 import { addProjectForm } from "./js/addProjectDom";
 //import { projectTaskForm } from "./js/addTaskForProject";
-import { defaultTasks } from "./js/addTask";
+import { defaultTasksList } from "./js/addTask";
 import { projectList } from "./js/addProject";
 import { homeButton } from "./js/home";
 
@@ -17,7 +17,7 @@ const addTaskButton = document.querySelector("#addTask");
 addTaskButton.addEventListener("click", ()=> {
     addTaskForm.style.display = "block";
     addProjectForm.style.display = "none";
-    console.log(defaultTasks);
+    console.log(defaultTasksList);
 });
 
 const addProjectButton = document.querySelector("#addProject");
