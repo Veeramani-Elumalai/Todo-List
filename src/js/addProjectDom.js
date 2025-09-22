@@ -60,6 +60,6 @@ const clonedPriorityButtons = priorityButtonContainer.cloneNode(true);
 
 //Appending all divs to the form
 addProjectForm.append(addProjectText, divTitle, divDueDate, clonedPriorityButtons, divDescription, subimtButton);
-addProjectContainer.append(addProjectForm);
+addProjectContainer.appendChild(addProjectForm);
 
 export {addProjectForm};

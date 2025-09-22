@@ -8,16 +8,16 @@ class addProject {
         this.projectDueDate = projectDueDate;
         this.projectPriority = projectPriority;
         this.projectDescription = projectDescription; 
-    }
+    }   
 }
 
 addProjectForm.addEventListener("submit", function(event){
     event.preventDefault();
 
-    const projectName = document.querySelector(".title").value;
-    const projectDueDate = document.querySelector(".dueDate").value;
-    const projectPriority = document.querySelector("input[name='priority']:checked").value;
-    const projectDescription = document.querySelector(".description").value;
+    const projectName = addProjectForm.querySelector(".title").value;
+    const projectDueDate = addProjectForm.querySelector(".dueDate").value;
+    const projectPriority = addProjectForm.querySelector("input[name='priority']:checked").value;
+    const projectDescription = addProjectForm.querySelector(".description").value;
 
     const newProject = new addProject(projectName, projectDueDate, projectPriority, projectDescription);
 
