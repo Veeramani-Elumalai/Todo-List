@@ -1,6 +1,5 @@
 import { projectList } from "./addProject";
 import { projectTaskForm } from "./addTaskForProjectDom";
-import { displayTasks } from "./defaultTask";
 
 const projectListContainer = document.createElement("div");
 projectListContainer.className = "projectListContainer";

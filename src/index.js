@@ -8,7 +8,6 @@ import { displayTasks } from "./js/defaultTask";
 import { projectListContainer } from "./js/projectList";
 import { displayProjects } from "./js/projectList";
 
-//document.body.append(projectTaskForm);
 
 document.body.append(addTaskForm);
 document.body.append(addProjectForm);
@@ -26,6 +25,7 @@ const addTaskButton = document.querySelector("#addTask");
 addTaskButton.addEventListener("click", ()=> {
     addTaskForm.style.display = "block";
     addProjectForm.style.display = "none";
+    projectTaskForm.style.display = "none";
     projectListContainer.style.display = "none";
     defaultTaskContainer.style.display = "none";
     console.log(defaultTasksList);
@@ -36,6 +36,7 @@ addProjectButton.addEventListener("click", ()=> {
     addTaskForm.style.display = "none";
     defaultTaskContainer.style.display = "none";
     projectListContainer.style.display = "none";
+    projectTaskForm.style.display = "none";
     addProjectForm.style.display = "block";
     console.log(projectList);
 });  
@@ -45,6 +46,7 @@ homeButton.addEventListener("click", ()=> {
     addProjectForm.style.display = "none";
     addTaskForm.style.display = "none";
     projectListContainer.style.display = "none";
+    projectTaskForm.style.display = "none";
     defaultTaskContainer.style.display = "block";
     displayTasks();
     
