@@ -1,6 +1,6 @@
 import { addTaskForm } from "./js/addTaskDom";
 import { addProjectForm } from "./js/addProjectDom";
-//import { projectTaskForm } from "./js/addTaskForProject";
+import { projectTaskForm } from "./js/addTaskForProjectDom";
 import { defaultTasksList } from "./js/addTask";
 import { projectList } from "./js/addProject";
 import { defaultTaskContainer } from "./js/defaultTask";
@@ -14,11 +14,13 @@ document.body.append(addTaskForm);
 document.body.append(addProjectForm);
 document.body.append(defaultTaskContainer);
 document.body.append(projectListContainer);
+document.body.append(projectTaskForm);
 
 addTaskForm.style.display = "none";
 addProjectForm.style.display = "none";
 defaultTaskContainer.style.display = "none";
 projectListContainer.style.display = "none";
+projectTaskForm.style.display = "none";
 
 const addTaskButton = document.querySelector("#addTask");
 addTaskButton.addEventListener("click", ()=> {

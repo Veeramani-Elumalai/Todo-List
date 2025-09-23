@@ -42,6 +42,7 @@ labelForDescriptionTextArea.textContent = "Description:";
 
 //Submit button
 const subimtButton = document.createElement("button");
+subimtButton.textContent = "submit";
 subimtButton.type = "submit";
 subimtButton.id = "submitTaskInProject";
 //Appending input elements into the container
