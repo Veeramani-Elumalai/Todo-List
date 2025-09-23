@@ -1,5 +1,4 @@
 import { addTaskForm } from "./addTaskDom";
-import { displayTasks } from "./defaultTask";
 
 const defaultTasksList = [];
 

@@ -55,6 +55,5 @@ projectsButton.addEventListener("click", ()=> {
     defaultTaskContainer.style.display = "none"; 
     projectListContainer.style.display = "block";
     displayProjects();
-    console.log("projectsbtn cliskd ");
 })
 
