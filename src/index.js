@@ -1,3 +1,4 @@
+import "./styles.css";
 import { addTaskForm } from "./js/forms/addTaskDom";
 import { addProjectForm } from "./js/forms/addProjectDom";
 import { projectTaskForm } from "./js/forms/addTaskForProjectDom";
@@ -7,13 +8,9 @@ import { defaultTaskContainer } from "./js/pages/defaultTask";
 import { displayTasks } from "./js/pages/defaultTask";
 import { projectListContainer, displayProjects, displayProjectTasks, projectTasksHome } from "./js/pages/projectList";
 
-document.body.append(addTaskForm);
-document.body.append(addProjectForm);
-document.body.append(defaultTaskContainer);
-document.body.append(projectListContainer);
-document.body.append(projectTaskForm);
-document.body.append(projectTasksHome);
+const mainContent = document.querySelector("#main")
 
+mainContent.append(addTaskForm, addProjectForm, defaultTaskContainer, projectListContainer, projectTaskForm, projectTasksHome);
 
 addTaskForm.style.display = "none";
 addProjectForm.style.display = "none";
