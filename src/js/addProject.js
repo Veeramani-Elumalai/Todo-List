@@ -11,12 +11,12 @@ class addProject {
         this.projectDueDate = projectDueDate;
         this.projectPriority = projectPriority;
         this.projectDescription = projectDescription; 
-        this.tasks = [];
+        this.projectTaskArray = [];
     }   
 }
 
 class projectSubTask {
-    constructor (taskName, taskDueDate, taskPriority, taskDescription){
+    constructor(taskName, taskDueDate, taskPriority, taskDescription){
         this.taskName = taskName;
         this.taskDueDate = taskDueDate;
         this.taskPriority = taskPriority;
@@ -53,11 +53,11 @@ projectTaskForm.addEventListener("submit", function(event) {
 
     const newTaskProject = new projectSubTask(taskName, taskDueDate, taskPriority, taskDescription);
     
-    activeProject.tasks.push(newTaskProject);
+    activeProject.projectTaskArray.push(newTaskProject);
     activeTask = newTaskProject;
     projectTaskForm.style.display = 'none';
     projectTaskForm.reset();
 })
 
 
-export { projectList };
+export { projectList, activeProject };
