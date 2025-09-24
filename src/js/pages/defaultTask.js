@@ -1,4 +1,4 @@
-import { defaultTasksList } from "./addTask";
+import { defaultTasksList } from "../constructors/addTask";
 
 const defaultTaskContainer = document.createElement("div");
 defaultTaskContainer.className = "defaultTaskContainer";

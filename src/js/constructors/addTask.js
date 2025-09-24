@@ -1,4 +1,4 @@
-import { addTaskForm } from "./addTaskDom";
+import { addTaskForm } from "../forms/addTaskDom";
 
 const defaultTasksList = [];
 

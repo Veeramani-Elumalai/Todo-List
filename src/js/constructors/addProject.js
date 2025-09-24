@@ -1,5 +1,5 @@
-import { addProjectForm } from "./addProjectDom";
-import { projectTaskForm } from "./addTaskForProjectDom";
+import { addProjectForm } from "../forms/addProjectDom";
+import { projectTaskForm } from "../forms/addTaskForProjectDom";
 
 const projectList = [];
 let activeProject = null;

@@ -1,5 +1,5 @@
-import { projectList, activeProject } from "./addProject";
-import { projectTaskForm } from "./addTaskForProjectDom";
+import { projectList, activeProject } from "../constructors/addProject";
+import { projectTaskForm } from "../forms/addTaskForProjectDom";
 
 //Projects
 const projectListContainer = document.createElement("div");

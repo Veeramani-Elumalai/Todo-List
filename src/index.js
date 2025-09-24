@@ -1,14 +1,11 @@
-import { addTaskForm } from "./js/addTaskDom";
-import { addProjectForm } from "./js/addProjectDom";
-import { projectTaskForm } from "./js/addTaskForProjectDom";
-import { defaultTasksList } from "./js/addTask";
-import { projectList } from "./js/addProject";
-import { defaultTaskContainer } from "./js/defaultTask";
-import { displayTasks } from "./js/defaultTask";
-import { projectListContainer } from "./js/projectList";
-import { displayProjects } from "./js/projectList";
-import { projectTasksHome } from "./js/projectList";
-import { displayProjectTasks } from "./js/projectList";
+import { addTaskForm } from "./js/forms/addTaskDom";
+import { addProjectForm } from "./js/forms/addProjectDom";
+import { projectTaskForm } from "./js/forms/addTaskForProjectDom";
+import { defaultTasksList } from "./js/constructors/addTask";
+import { projectList } from "./js/constructors/addProject";
+import { defaultTaskContainer } from "./js/pages/defaultTask";
+import { displayTasks } from "./js/pages/defaultTask";
+import { projectListContainer, displayProjects, displayProjectTasks, projectTasksHome } from "./js/pages/projectList";
 
 document.body.append(addTaskForm);
 document.body.append(addProjectForm);
