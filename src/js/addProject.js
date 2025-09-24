@@ -3,6 +3,7 @@ import { projectTaskForm } from "./addTaskForProjectDom";
 
 const projectList = [];
 let activeProject = null;
+let activeTask = null;
 
 class addProject {
     constructor(projectName, projectDueDate, projectPriority, projectDescription){
@@ -42,17 +43,18 @@ addProjectForm.addEventListener("submit", function(event){
 
 
 //Project Tasks
-projectTaskForm.addEventListener("click", function(event) {
+projectTaskForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const taskName = document.querySelector(".title").value;
-    const taskDueDate = document.querySelector(".dueDate").value;
+    const taskName = document.querySelector(".titleTask").value;
+    const taskDueDate = document.querySelector(".dueDateTask").value;
     const taskPriority = document.querySelector("input[name='priority']:checked").value;
-    const taskDescription = document.querySelector(".description").value;
+    const taskDescription = document.querySelector(".descriptionTask").value;
 
     const newTaskProject = new projectSubTask(taskName, taskDueDate, taskPriority, taskDescription);
     
     activeProject.tasks.push(newTaskProject);
+    activeTask = newTaskProject;
     projectTaskForm.style.display = 'none';
     projectTaskForm.reset();
 })

@@ -17,27 +17,27 @@ const divDescription = document.createElement("div");
 //Input Task Name
 const title = document.createElement("input");
 title.type = "text";
-title.className = "title";
+title.className = "titleTask";
 const labelForTitle = document.createElement("label");
-labelForTitle.htmlFor = "title";
+labelForTitle.htmlFor = "titleTask";
 labelForTitle.textContent = "Task Name:";
 
 //Input Due Date
 const dueDate = document.createElement("input");
 dueDate.type = "date";
-dueDate.className = "dueDate";
+dueDate.className = "dueDateTask";
 const labelForDueDate = document.createElement("label");
-labelForDueDate.htmlFor = "dueDate";
+labelForDueDate.htmlFor = "dueDateTask";
 labelForDueDate.textContent = "Due Date:";
 
 //Description
 const descriptionTextarea = document.createElement("textarea");
-descriptionTextarea.className = "description";
-descriptionTextarea.name = "description";
+descriptionTextarea.className = "descriptionTask";
+descriptionTextarea.name = "descriptionTask";
 descriptionTextarea.rows = 5;
 descriptionTextarea.cols = 40;
 const labelForDescriptionTextArea = document.createElement("label");
-labelForDescriptionTextArea.htmlFor = "description";
+labelForDescriptionTextArea.htmlFor = "descriptionTask";
 labelForDescriptionTextArea.textContent = "Description:";
 
 //Submit button
