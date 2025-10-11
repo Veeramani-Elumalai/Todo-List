@@ -15,7 +15,7 @@ body{
 #container{
     background-color: white;
     width: 75vw;
-    height: 75vh;
+    height: 100vh;
     padding: 10px;
     gap: 10px;
 }
@@ -36,4 +36,21 @@ nav button:focus{
     background-color: rgb(243, 86, 86);
     color: white;
     border: 0px;
+}
+
+.tasks{
+    background-color: burlywood;
+    padding: 10px;
+    border: 1px solid brown;
+    margin: 10px;
+}
+
+.defaultTaskContainer{
+    background-color: rgb(138, 229, 233);
+    padding: 10px;
+}
+
+.projectTaskHome{
+    background-color: rgb(201, 151, 249);
+    padding: 10px;
 }
