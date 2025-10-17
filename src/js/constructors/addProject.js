@@ -1,7 +1,7 @@
 import { addProjectForm } from "../forms/addProjectDom";
 import { projectTaskForm } from "../forms/addTaskForProjectDom";
 
-const projectList = [];
+const projectList = JSON.parse(localStorage.getItem("addProject")) || [];
 let activeProject = null;
 let activeTask = null;
 
@@ -37,6 +37,7 @@ addProjectForm.addEventListener("submit", function(event){
 
     projectList.push(newProject);
     activeProject = newProject;
+    localStorage.setItem("addProject",JSON.stringify(projectList));
     addProjectForm.style.display = 'none';
     addProjectForm.reset();   
 });

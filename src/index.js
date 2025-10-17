@@ -59,7 +59,7 @@ projectsButton.addEventListener("click", ()=> {
     addTaskForm.style.display = "none";
     defaultTaskContainer.style.display = "none"; 
     projectListContainer.style.display = "block";
-    projectTasksHome.style.display = "none";
+    projectTasksHome.style.display = "block";
     displayProjects();
 })
 
